@@ -532,9 +532,10 @@ function callSendProfile() {
  * certificate authority.
  */
 app.listen(app.get('port'), function() {
-  console.log('[app.listen] Node app is running on port', app.get('port'));
+  console.log('[app.listen] Node app is running - ' + HOST_URL + ':' + app.get('port'));
   callSendProfile();
 });
 
 module.exports = app;
+
 
